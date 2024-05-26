@@ -11,8 +11,9 @@ struct ContentView: View {
     @State var emojis: [String] = ["🎃","👻","🦇","💀","💀","👻","🎃","🦇"]
 
     var body: some View {
-        title
+        
         VStack {
+            title
             ScrollView {
                 cards
             }
@@ -31,7 +32,7 @@ struct ContentView: View {
         Text("Memorize!").font(.largeTitle).bold(true)
     }
     var cards: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 90))]) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 60))]) {
             ForEach(emojis.indices,id: \.self) { index in
                 CardView(content: emojis[index])
                     .aspectRatio(2/3, contentMode: .fit)
@@ -43,9 +44,12 @@ struct ContentView: View {
     func configureThemeButton(content: [String], name: String) -> some View {
         Button(action: {
             emojis.removeAll()
-            emojis.append(contentsOf: content)
+            emojis.append(contentsOf: content.shuffled())
         }, label: {
-            Text(name)
+            VStack {
+                Text(name)
+                Text(content.first ?? "").font(.largeTitle)
+            }
         })
     }
     
