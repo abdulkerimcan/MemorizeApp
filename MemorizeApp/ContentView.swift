@@ -12,9 +12,19 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            CardView(content: "🎃")
+            cards
         }
         .padding()
+    }
+    
+    var cards: some View {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))]) {
+            ForEach(emojis.indices,id: \.self) { index in
+                CardView(content: emojis[index])
+                    .aspectRatio(2/3, contentMode: .fit)
+            }
+        }
+        .foregroundStyle(.orange)
     }
 }
 
@@ -24,18 +34,21 @@ struct CardView: View {
     
     var body: some View {
         ZStack {
-            let base = RoundedRectangle(cornerRadius: 20)
-                .strokeBorder(lineWidth: 2)
-                .fill(.blue)
+            let base = RoundedRectangle(cornerRadius: 12)
+                .fill(.white)
             Group {
                 base
+                base.strokeBorder(lineWidth: 2)
                 Text(content)
+                    .imageScale(.large)
+                    .font(.largeTitle)
             }.opacity(isFaceUp ? 1 : 0)
             base.fill().opacity(isFaceUp ? 0 : 1)
             
         }.onTapGesture {
             isFaceUp.toggle()
         }
+        
     }
 }
 
