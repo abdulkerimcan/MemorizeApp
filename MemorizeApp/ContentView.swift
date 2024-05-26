@@ -8,19 +8,28 @@
 import SwiftUI
 
 struct ContentView: View {
-    let emojis: [String] = ["🎃","👻","🍬","🦇","💀","🧡"]
+    @State var emojis: [String] = ["🎃","👻","🦇","💀","💀","👻","🎃","🦇"]
 
     var body: some View {
-
-        VStack(alignment: .leading) {
-            Text("Memorize!").font(.largeTitle).bold(true)
+        title
+        VStack {
             ScrollView {
                 cards
+            }
+            Spacer()
+            HStack(spacing: 50) {
+                halloweenThemeButton
+                forestThemeButton
+                flagThemeButton
             }
         }
         .padding()
     }
+
     
+    var title: some View {
+        Text("Memorize!").font(.largeTitle).bold(true)
+    }
     var cards: some View {
         LazyVGrid(columns: [GridItem(.adaptive(minimum: 90))]) {
             ForEach(emojis.indices,id: \.self) { index in
@@ -29,6 +38,27 @@ struct ContentView: View {
             }
         }
         .foregroundStyle(.orange)
+    }
+    
+    func configureThemeButton(content: [String], name: String) -> some View {
+        Button(action: {
+            emojis.removeAll()
+            emojis.append(contentsOf: content)
+        }, label: {
+            Text(name)
+        })
+    }
+    
+    var halloweenThemeButton: some View {
+        configureThemeButton(content: ["🎃","👻","🦇","💀","💀","👻","🎃","🦇"], name: "Halloween")
+    }
+    
+    var forestThemeButton: some View {
+        configureThemeButton(content: ["🌳","🏞️","💚","🍀","🌿","🌲","🏞️","🍀","🌿","🌳","💚","🌲"], name: "Forest")
+    }
+    
+    var flagThemeButton: some View {
+        configureThemeButton(content: ["🇹🇷","🇰🇷","🇺🇸","🇨🇦","🇮🇹","🇰🇷","🇨🇦","🇹🇷","🇺🇸","🇮🇹"], name: "Flags")
     }
 }
 
