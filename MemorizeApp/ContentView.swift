@@ -9,16 +9,20 @@ import SwiftUI
 
 struct ContentView: View {
     let emojis: [String] = ["🎃","👻","🍬","🦇","💀","🧡"]
-    
+
     var body: some View {
-        VStack {
-            cards
+
+        VStack(alignment: .leading) {
+            Text("Memorize!").font(.largeTitle).bold(true)
+            ScrollView {
+                cards
+            }
         }
         .padding()
     }
     
     var cards: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))]) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 90))]) {
             ForEach(emojis.indices,id: \.self) { index in
                 CardView(content: emojis[index])
                     .aspectRatio(2/3, contentMode: .fit)
