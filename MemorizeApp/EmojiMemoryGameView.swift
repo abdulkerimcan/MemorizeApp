@@ -34,6 +34,9 @@ struct EmojiMemoryGameView: View {
                 CardView(card: card)
                     .aspectRatio(2/3, contentMode: .fit)
                     .padding(4)
+                    .onTapGesture {
+                        viewModel.choose(card)
+                    }
             }
         }
         .foregroundStyle(.orange)
@@ -46,9 +49,8 @@ struct CardView: View {
     var body: some View {
         ZStack {
             let base = RoundedRectangle(cornerRadius: 12)
-                .fill(.white)
             Group {
-                base
+                base.fill(.white)
                 base.strokeBorder(lineWidth: 2)
                 Text(card.content)
                     .font(.system(size: 200))
@@ -56,8 +58,7 @@ struct CardView: View {
                     .aspectRatio(1, contentMode: .fit)
             }.opacity(card.isFacedUp ? 1 : 0)
             base.fill().opacity(card.isFacedUp ? 0 : 1)
-            
-        }
+        }.opacity(card.isFacedUp || !card.isMatched ? 1: 0)
         
     }
 }
