@@ -20,5 +20,130 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A240F7B8-0652-43D2-AD33-2B90CF8315F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemorizeApp/EmojiMemoryGameView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "cards"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FD72F6F-ED69-4F0E-AE05-51A3EC103975"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemorizeApp/AspectVGrid.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "2FD72F6F-ED69-4F0E-AE05-51A3EC103975 - 2657481a19c5c23b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt;&gt; in MemorizeApp.AspectVGrid.body.getter : some"
+                  moduleName = "MemorizeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kerim/Desktop/IOS%20Development/MemorizeApp/MemorizeApp/AspectVGrid.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "2FD72F6F-ED69-4F0E-AE05-51A3EC103975 - 8441e1cffa255cc4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (&#x3c4;_0_0) -&gt; &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt;&gt; in MemorizeApp.AspectVGrid.body.getter : some"
+                  moduleName = "MemorizeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kerim/Desktop/IOS%20Development/MemorizeApp/MemorizeApp/AspectVGrid.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "2FD72F6F-ED69-4F0E-AE05-51A3EC103975 - cca0918ebe0565bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt;&gt; in MemorizeApp.AspectVGrid.body.getter : some"
+                  moduleName = "MemorizeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kerim/Desktop/IOS%20Development/MemorizeApp/MemorizeApp/AspectVGrid.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1176">
+               </Location>
+               <Location
+                  uuid = "2FD72F6F-ED69-4F0E-AE05-51A3EC103975 - 2657481a19c5c1fd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt;&gt; in MemorizeApp.AspectVGrid.body.getter : some"
+                  moduleName = "MemorizeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kerim/Desktop/IOS%20Development/MemorizeApp/MemorizeApp/AspectVGrid.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "528">
+               </Location>
+               <Location
+                  uuid = "2FD72F6F-ED69-4F0E-AE05-51A3EC103975 - cca0918ebe0565bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.LazyVGrid&lt;SwiftUI.ForEach&lt;Swift.Array&lt;&#x3c4;_0_0&gt;, &#x3c4;_0_0.ID, &lt;&lt;opaque return type of SwiftUI.View.aspectRatio(_: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, contentMode: SwiftUI.ContentMode) -&gt; some&gt;&gt;.0&gt;&gt; in MemorizeApp.AspectVGrid.body.getter : some"
+                  moduleName = "MemorizeApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kerim/Desktop/IOS%20Development/MemorizeApp/MemorizeApp/AspectVGrid.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "1168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3C23E8B1-3846-4827-85A9-0FB610D19B13"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MemorizeApp/AspectVGrid.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "gridItemWidthThatFits(count:size:aspectRadio:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

@@ -9,14 +9,11 @@ import SwiftUI
 
 struct EmojiMemoryGameView: View {
     @ObservedObject var viewModel: MemoryViewModel
-    
+    let aspectRadio: CGFloat = 2/3
     var body: some View {
-        
         VStack {
             title
-            ScrollView {
-                cards.animation(.default, value: viewModel.cards)
-            }
+            cards.animation(.default, value: viewModel.cards)
             Button("Shuffle") {
                 viewModel.shuffle()
             }
@@ -29,15 +26,13 @@ struct EmojiMemoryGameView: View {
         Text("Memorize!").font(.largeTitle).bold(true)
     }
     var cards: some View {
-        LazyVGrid(columns: [GridItem(.adaptive(minimum: 85),spacing: .zero)], spacing: .zero) {
-            ForEach(viewModel.cards) { card in
-                CardView(card: card)
-                    .aspectRatio(2/3, contentMode: .fit)
-                    .padding(4)
-                    .onTapGesture {
-                        viewModel.choose(card)
-                    }
-            }
+        AspectVGrid(items: viewModel.cards, aspectRadio: aspectRadio) { card in
+            CardView(card: card)
+                .padding(4)
+                .onTapGesture {
+                    viewModel.choose(card)
+                }
+            
         }
         .foregroundStyle(.orange)
     }
